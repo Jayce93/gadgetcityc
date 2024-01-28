@@ -129,20 +129,6 @@ class ProductVertical extends StatelessWidget {
                 ),
               ],
             ),
-            // Expanded(
-            //   child: ElevatedButton(
-            //     onPressed: () {
-            //       // Add your button's functionality here
-            //     },
-            //     child: Text('Add To Cart'),
-            //     style: ElevatedButton.styleFrom(
-            //       shape: RoundedRectangleBorder(
-            //         borderRadius: BorderRadius.circular(
-            //             GSizes.cardRadiusMd), // Set the radius here
-            //       ),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),

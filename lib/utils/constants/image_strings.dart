@@ -23,7 +23,8 @@ class GImages {
   // PRODUCTs
   static const String product1 = "assets/products/laptop1.jpg";
 
-  //
+  //user
+  static const String user1 = "assets/user/user1.jpg";
 
   //
 }
