@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gadgetcity/common/widgets/list_tiles/settings_menu.dart';
+import 'package:gadgetcity/common/widgets/list_tiles/user_profile.dart';
 import 'package:gadgetcity/common/widgets/products.cart/widgets/circular_image.dart';
+import 'package:gadgetcity/common/widgets/texts/section_heading.dart';
 import 'package:gadgetcity/features/shop/screens/home/widgets/g_appbar.dart';
 import 'package:gadgetcity/features/shop/screens/home/widgets/primary_header_container.dart';
 import 'package:gadgetcity/utils/constants/colors.dart';
@@ -18,57 +21,100 @@ class SettingsScreen extends StatelessWidget {
           children: [
             // / --- HHeader
             GPrimaryHeaderContainer(
-                child: Column(
-              children: [
-                GAppBar(
-                  title: Text(
-                    'Account',
-                    style: Theme.of(context)
-                        .textTheme
-                        .headlineMedium!
-                        .apply(color: GColors.white),
+              child: Column(
+                children: [
+                  GAppBar(
+                    title: Text(
+                      'Account',
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineMedium!
+                          .apply(color: GColors.white),
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  height: GSizes.sapceBtnSections,
-                ),
-                // User Profile
-                const GUserProfile()
-              ],
-            ))
+                  const SizedBox(
+                    height: GSizes.sapceBtnSections,
+                  ),
+                  // User Profile
+                  const GUserProfile(),
+                  const SizedBox(
+                    height: GSizes.sapceBtnSections,
+                  )
+                ],
+              ),
+            ),
             // / -- Body
+            Padding(
+              padding: const EdgeInsets.all(GSizes.defaultSpace),
+              child: Column(
+                children: [
+                  // -- Account Settings
+                  const GSectionHeading(
+                    title: ' Account Settings',
+                    showActionButton: false,
+                  ),
+                  const SizedBox(
+                    height: GSizes.spaceBtwnItems,
+                  ),
+                  GSettingsMenuTile(
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    icon: Iconsax.safe_home,
+                    onTap: () {},
+                  ),
+                  GSettingsMenuTile(
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    icon: Iconsax.safe_home,
+                    onTap: () {},
+                  ),
+                  GSettingsMenuTile(
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    icon: Iconsax.safe_home,
+                    onTap: () {},
+                  ),
+                  GSettingsMenuTile(
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    icon: Iconsax.safe_home,
+                    onTap: () {},
+                  ),
+                  GSettingsMenuTile(
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    icon: Iconsax.safe_home,
+                    onTap: () {},
+                  ),
+                  GSettingsMenuTile(
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    icon: Iconsax.safe_home,
+                    onTap: () {},
+                  ),
+                  // / App Settings
+                  const SizedBox(
+                    height: GSizes.sapceBtnSections,
+                  ),
+                  GSectionHeading(
+                    title: 'App Settings',
+                    showActionButton: false,
+                  ),
+                  const SizedBox(
+                    height: GSizes.spaceBtwnItems,
+                  ),
+                  GSettingsMenuTile(
+                    title: 'Load Data',
+                    subTitle: 'Upload Data to your cloud firebase ',
+                    icon: Iconsax.document_upload,
+                    onTap: () {},
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
-    );
-  }
-}
-
-class GUserProfile extends StatelessWidget {
-  const GUserProfile({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: const GCircularImage(
-        image: GImages.user1,
-        width: 50,
-        height: 50,
-        padding: 0,
-      ),
-      subtitle: Text(
-        'gadgetcity@gadgetcityapp.com',
-        style:
-            Theme.of(context).textTheme.bodyMedium!.apply(color: GColors.white),
-      ),
-      trailing: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Iconsax.edit,
-            color: GColors.white,
-          )),
     );
   }
 }
