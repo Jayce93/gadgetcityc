@@ -4,12 +4,14 @@ import 'package:gadgetcity/common/widgets/custom_shapes/containers/circular_cont
 import 'package:gadgetcity/common/widgets/icons/g_circular_icons.dart';
 import 'package:gadgetcity/common/widgets/images/g_rounded_images.dart';
 import 'package:gadgetcity/common/widgets/products.cart/widgets/product_title_text.dart';
+import 'package:gadgetcity/features/shop/screens/product_details/product_details.dart';
 
 import 'package:gadgetcity/utils/constants/colors.dart';
 import 'package:gadgetcity/utils/constants/image_strings.dart';
 
 import 'package:gadgetcity/utils/constants/sizes.dart';
 import 'package:gadgetcity/utils/helpers/helpers_functions.dart';
+import 'package:get/get.dart';
 
 import 'package:iconsax/iconsax.dart';
 
@@ -20,7 +22,7 @@ class ProductVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = GHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetail()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),

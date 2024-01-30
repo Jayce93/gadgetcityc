@@ -13,7 +13,7 @@ class GAppTheme {
       useMaterial3: true,
       fontFamily: 'Poppins',
       brightness: Brightness.light,
-      primaryColor: Colors.blue.shade500,
+      primaryColor: const Color(0x2D7DD2),
       scaffoldBackgroundColor: Colors.white,
       textTheme: GTextTheme.lightTextTheme,
       chipTheme: GChipTheme.lightChipTheme,

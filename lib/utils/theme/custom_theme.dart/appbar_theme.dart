@@ -7,6 +7,7 @@ class GAppBarTheme {
     centerTitle: false,
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
+    surfaceTintColor: Colors.transparent,
     iconTheme: IconThemeData(
       color: Colors.black,
       size: 24,
@@ -22,6 +23,7 @@ class GAppBarTheme {
     centerTitle: false,
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
+    surfaceTintColor: Colors.transparent,
     iconTheme: IconThemeData(
       color: Colors.black,
       size: 24,
