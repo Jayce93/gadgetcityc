@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gadgetcity/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:gadgetcity/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 
 import 'package:gadgetcity/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:gadgetcity/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
@@ -23,22 +24,29 @@ class OnBoardingScreen extends StatelessWidget {
             onPageChanged: controller.updatePageIndicator,
             children: const [
               OnBoardingPage(
-                image: GImages.onboarding1,
                 title: GText.onBoardingTextTitle1,
+                image: GImages.onboarding1,
                 subTitle: GText.onBoardingTextSubTitle1,
               ),
               OnBoardingPage(
-                image: GImages.onboarding2,
                 title: GText.onBoardingTextTitle2,
+                image: GImages.onboarding2,
                 subTitle: GText.onBoardingTextSubTitle2,
               ),
               OnBoardingPage(
-                image: GImages.onboarding3,
                 title: GText.onBoardingTextTitle3,
+                image: GImages.onboarding3,
                 subTitle: GText.onBoardingTextSubTitle3,
               ),
             ],
           ),
+          // Positioned Dot Indicator
+          // const Positioned(
+          //   top: 71,
+          //   left: 24,
+          //   height: 0,
+          //   child: OnBoardingDotIndicator(),
+          // ),
 
           const SizedBox(height: 9),
           // Skip Button

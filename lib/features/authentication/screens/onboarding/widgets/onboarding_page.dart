@@ -19,17 +19,18 @@ class OnBoardingPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, // Center content
           children: [
+            Text(
+              title,
+              style: Theme.of(context).textTheme.headlineMedium,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: GSizes.spaceBtwnItems - 10),
             Image(
               width: GHelperFunctions.screenWidth() * 0.8,
               height: 300,
               image: AssetImage(image),
             ),
             const SizedBox(height: GSizes.spaceBtwnItems),
-            Text(
-              title,
-              style: Theme.of(context).textTheme.headlineMedium,
-              textAlign: TextAlign.center,
-            ),
             const SizedBox(height: GSizes.spaceBtwnItems),
             Text(
               subTitle,
@@ -37,7 +38,6 @@ class OnBoardingPage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 10),
-            const OnBoardingDotIndicator(),
           ],
         ));
   }

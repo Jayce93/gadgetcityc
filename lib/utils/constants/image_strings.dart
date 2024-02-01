@@ -7,9 +7,6 @@ class GImages {
   static const String onboarding2 = "onboard2.png";
   static const String onboarding3 = "assets/onboardingImages/onboard3.png";
 
-  static const String google = "assets/images/carousel2.jpg";
-  static const String facebook = "assets/images/shoe1.jpg";
-
   // Verify Email Alt Images
   static const String verifyemail1 = "assets/images/verifyemail1.jpg";
   static const String verifyemail2 = "assets/images/verifyemail2.PNG";
@@ -22,9 +19,19 @@ class GImages {
 
   // PRODUCTs
   static const String product1 = "assets/products/laptop1.jpg";
+  static const String watch = "assets/products/watch.png";
+  static const String subwatch1 = "assets/products/watch2.png";
+  static const String subwatch2 = "assets/products/watch1.jpg";
+  static const String subwatch3 = "assets/products/watch3.jpg";
+  static const String subwatch4 = "assets/products/watch4.jpg";
 
   //user
   static const String user1 = "assets/user/user1.jpg";
 
-  //
+  //Social Login / Sign Up
+  static const String google1 = "assets/logos/apple.png";
+  static const String apple = "assets/logos/google.png";
+  static const String facebook = "assets/logos/facebook.png";
+  static const String x = "assets/logos/x.png";
+  static const String yahoo = "assets/logos/yahoo.png";
 }

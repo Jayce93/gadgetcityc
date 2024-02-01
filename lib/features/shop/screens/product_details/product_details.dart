@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gadgetcity/common/widgets/custom_shapes/containers/curved_edges_widget.dart';
+import 'package:gadgetcity/common/widgets/images/g_rounded_images.dart';
 import 'package:gadgetcity/utils/constants/colors.dart';
 import 'package:gadgetcity/utils/constants/image_strings.dart';
 import 'package:gadgetcity/utils/constants/sizes.dart';
@@ -18,13 +19,20 @@ class ProductDetail extends StatelessWidget {
             GCurvedEdgesWidget(
                 child: Container(
               color: dark ? GColors.darkerGrey : GColors.light,
-              child: const SizedBox(
-                height: 400,
-                child: Padding(
-                  padding: EdgeInsets.all(GSizes.productImageRadius * 2),
-                  child: Center(child: Image(image: AssetImage(GImages.user1))),
+              child: const Stack(children: [
+                SizedBox(
+                  height: 400,
+                  child: Padding(
+                    padding: EdgeInsets.all(GSizes.productImageRadius * 2),
+                    child:
+                        Center(child: Image(image: AssetImage(GImages.watch))),
+                  ),
                 ),
-              ),
+                RoundedImage(
+                  imageUrl: GImages.subwatch1,
+                  onPressed: () {},
+                )
+              ]),
             ))
           ],
         ),

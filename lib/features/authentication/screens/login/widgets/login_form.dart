@@ -32,7 +32,7 @@ class LoginForm extends StatelessWidget {
             TextFormField(
               decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.password_check),
-                  labelText: GText.onBoardingTextSubTitle1,
+                  labelText: GText.loginPasswordText,
                   suffixIcon: Icon(Iconsax.eye_slash)),
             ),
             const SizedBox(
@@ -61,23 +61,23 @@ class LoginForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () => Get.to(() => const NavigationMenu()),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(
-                      const Color.fromARGB(198, 56, 39, 156)),
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.blue, // Set your text color
+                  fixedSize: const Size(119, 54), // Set width and height
+                  textStyle: const TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    height: 22 / 14, // Set line height
+                    letterSpacing: 0.5,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius:
+                        BorderRadius.circular(12.0), // Set border radius
+                  ),
                 ),
                 child: const Text('Sign In'),
-              ),
-            ),
-            const SizedBox(
-              height: GSizes.spaceBtwnItems,
-            ),
-
-            // Create Account Button
-            SizedBox(
-              width: double.infinity,
-              child: OutlinedButton(
-                onPressed: () => Get.to(() => const SignUpScreen()),
-                child: const Text('Sign Up'),
               ),
             ),
             const SizedBox(

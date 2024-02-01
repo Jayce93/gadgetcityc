@@ -23,7 +23,21 @@ class SocialLogin extends StatelessWidget {
             icon: const Image(
               width: GSizes.iconmd,
               height: GSizes.iconmd,
-              image: AssetImage(GImages.google),
+              image: AssetImage(GImages.google1),
+            ),
+          ),
+        ),
+        const SizedBox(width: GSizes.spaceBtwnItems),
+        Container(
+          decoration: BoxDecoration(
+              border: Border.all(color: GColors.grey),
+              borderRadius: BorderRadius.circular(100)),
+          child: IconButton(
+            onPressed: () {},
+            icon: const Image(
+              width: GSizes.iconmd,
+              height: GSizes.iconmd,
+              image: AssetImage(GImages.apple),
             ),
           ),
         ),
@@ -38,6 +52,34 @@ class SocialLogin extends StatelessWidget {
               width: GSizes.iconmd,
               height: GSizes.iconmd,
               image: AssetImage(GImages.facebook),
+            ),
+          ),
+        ),
+        const SizedBox(width: GSizes.spaceBtwnItems),
+        Container(
+          decoration: BoxDecoration(
+              border: Border.all(color: GColors.grey),
+              borderRadius: BorderRadius.circular(100)),
+          child: IconButton(
+            onPressed: () {},
+            icon: const Image(
+              width: GSizes.iconmd,
+              height: GSizes.iconmd,
+              image: AssetImage(GImages.x),
+            ),
+          ),
+        ),
+        const SizedBox(width: GSizes.spaceBtwnItems),
+        Container(
+          decoration: BoxDecoration(
+              border: Border.all(color: GColors.grey),
+              borderRadius: BorderRadius.circular(100)),
+          child: IconButton(
+            onPressed: () {},
+            icon: const Image(
+              width: GSizes.iconmd,
+              height: GSizes.iconmd,
+              image: AssetImage(GImages.yahoo),
             ),
           ),
         ),

@@ -24,14 +24,22 @@ class OnboardingNextButton extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () => OnBoardingController.instance.nextPage(),
             style: ElevatedButton.styleFrom(
+              fixedSize: const Size(382, 54),
+              padding: EdgeInsets.fromLTRB(131, 13, 131, 13),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30.0),
+                borderRadius: BorderRadius.circular(12),
               ),
-              padding: const EdgeInsets.symmetric(
-                  vertical: 16.0), // Adjust the vertical padding
-              backgroundColor: dark ? GColors.primaryColor : Colors.black,
+              elevation: 4,
+              backgroundColor: Colors.blue.shade500,
             ),
-            child: const Text('Continue'),
+            child: const Text(
+              'Continue',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                color: Colors.white, // Change the text color as needed
+              ),
+            ),
           ),
         ),
       ),

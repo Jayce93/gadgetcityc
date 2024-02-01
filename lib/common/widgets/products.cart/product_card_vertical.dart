@@ -125,8 +125,22 @@ class ProductVertical extends StatelessWidget {
                         borderRadius: BorderRadius.circular(
                             GSizes.cardRadiusMd), // Set the radius here
                       ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8.0,
+                        vertical: 3.0,
+                      ),
+                      backgroundColor: Colors.blue.shade500,
                     ),
-                    child: const Text('Add To Cart'),
+                    child: const Text(
+                      'Add To Cart',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        letterSpacing: 0,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ),
               ],
